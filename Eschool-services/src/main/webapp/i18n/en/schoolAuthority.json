@@ -1,0 +1,23 @@
+{
+    "eschoolApp": {
+        "schoolAuthority": {
+            "home": {
+                "title": "School Authorities",
+                "createLabel": "Create a new School Authority",
+                "createOrEditLabel": "Create or edit a School Authority"
+            },
+            "created": "A new School Authority is created with identifier {{ param }}",
+            "updated": "A School Authority is updated with identifier {{ param }}",
+            "deleted": "A School Authority is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete School Authority {{ id }}?"
+            },
+            "detail": {
+                "title": "School Authority"
+            },
+            "school": "School",
+            "user": "User",
+            "role": "Role"
+        }
+    }
+}

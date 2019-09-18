@@ -1,0 +1,87 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="school">
+            <h2><span jhiTranslate="eschoolApp.school.detail.title">School</span> {{school.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eschoolApp.school.schoolName">School Name</span></dt>
+                <dd>
+                    <span>{{school.schoolName}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.streetAddress">Street Address</span></dt>
+                <dd>
+                    <span>{{school.streetAddress}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{school.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.city">City</span></dt>
+                <dd>
+                    <span>{{school.city}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.stateProvince">State Province</span></dt>
+                <dd>
+                    <span>{{school.stateProvince}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.telephone">Telephone</span></dt>
+                <dd>
+                    <span>{{school.telephone}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.devise">Devise</span></dt>
+                <dd>
+                    <span>{{school.devise}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.description">Description</span></dt>
+                <dd>
+                    <span>{{school.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.ccCoef">Cc Coef</span></dt>
+                <dd>
+                    <span>{{school.ccCoef}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.cCoef">C Coef</span></dt>
+                <dd>
+                    <span>{{school.cCoef}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.logoLink">Logo Link</span></dt>
+                <dd>
+                    <span>{{school.logoLink}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.countryname">Countryname</span></dt>
+                <dd>
+                    <span>{{school.countryname}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.countryMotto">Country Motto</span></dt>
+                <dd>
+                    <span>{{school.countryMotto}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.countrySecretary">Country Secretary</span></dt>
+                <dd>
+                    <span>{{school.countrySecretary}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.countrySubSecretary">Country Sub Secretary</span></dt>
+                <dd>
+                    <span>{{school.countrySubSecretary}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.school.schoolMotto">School Motto</span></dt>
+                <dd>
+                    <span>{{school.schoolMotto}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/school', school.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

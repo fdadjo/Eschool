@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileUrl",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190417130400",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "homework",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

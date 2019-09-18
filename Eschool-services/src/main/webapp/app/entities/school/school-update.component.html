@@ -1,0 +1,104 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-school-heading" jhiTranslate="eschoolApp.school.home.createOrEditLabel">Create or edit a School</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!school.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="school.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.schoolName" for="field_schoolName">School Name</label>
+                    <input type="text" class="form-control" name="schoolName" id="field_schoolName"
+                        [(ngModel)]="school.schoolName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.streetAddress" for="field_streetAddress">Street Address</label>
+                    <input type="text" class="form-control" name="streetAddress" id="field_streetAddress"
+                        [(ngModel)]="school.streetAddress" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.postalCode" for="field_postalCode">Postal Code</label>
+                    <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                        [(ngModel)]="school.postalCode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.city" for="field_city">City</label>
+                    <input type="text" class="form-control" name="city" id="field_city"
+                        [(ngModel)]="school.city" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.stateProvince" for="field_stateProvince">State Province</label>
+                    <input type="text" class="form-control" name="stateProvince" id="field_stateProvince"
+                        [(ngModel)]="school.stateProvince" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.telephone" for="field_telephone">Telephone</label>
+                    <input type="text" class="form-control" name="telephone" id="field_telephone"
+                        [(ngModel)]="school.telephone" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.devise" for="field_devise">Devise</label>
+                    <input type="text" class="form-control" name="devise" id="field_devise"
+                        [(ngModel)]="school.devise" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="school.description" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.ccCoef" for="field_ccCoef">Cc Coef</label>
+                    <input type="number" class="form-control" name="ccCoef" id="field_ccCoef"
+                        [(ngModel)]="school.ccCoef" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.cCoef" for="field_cCoef">C Coef</label>
+                    <input type="number" class="form-control" name="cCoef" id="field_cCoef"
+                        [(ngModel)]="school.cCoef" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.logoLink" for="field_logoLink">Logo Link</label>
+                    <input type="text" class="form-control" name="logoLink" id="field_logoLink"
+                        [(ngModel)]="school.logoLink" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.countryname" for="field_countryname">Countryname</label>
+                    <input type="text" class="form-control" name="countryname" id="field_countryname"
+                        [(ngModel)]="school.countryname" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.countryMotto" for="field_countryMotto">Country Motto</label>
+                    <input type="text" class="form-control" name="countryMotto" id="field_countryMotto"
+                        [(ngModel)]="school.countryMotto" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.countrySecretary" for="field_countrySecretary">Country Secretary</label>
+                    <input type="text" class="form-control" name="countrySecretary" id="field_countrySecretary"
+                        [(ngModel)]="school.countrySecretary" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.countrySubSecretary" for="field_countrySubSecretary">Country Sub Secretary</label>
+                    <input type="text" class="form-control" name="countrySubSecretary" id="field_countrySubSecretary"
+                        [(ngModel)]="school.countrySubSecretary" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.school.schoolMotto" for="field_schoolMotto">School Motto</label>
+                    <input type="text" class="form-control" name="schoolMotto" id="field_schoolMotto"
+                        [(ngModel)]="school.schoolMotto" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

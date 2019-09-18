@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="schoolAuthority">
+            <h2><span jhiTranslate="eschoolApp.schoolAuthority.detail.title">School Authority</span> {{schoolAuthority.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eschoolApp.schoolAuthority.school">School</span></dt>
+                <dd>
+                    <div *ngIf="schoolAuthority.school">
+                        <a [routerLink]="['/school', schoolAuthority.school?.id, 'view']">{{schoolAuthority.school?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.schoolAuthority.user">User</span></dt>
+                <dd>
+                    {{schoolAuthority.user?.login}}
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.schoolAuthority.role">Role</span></dt>
+                <dd>
+                    <div *ngIf="schoolAuthority.role">
+                        <a [routerLink]="['/authority', schoolAuthority.role?.id, 'view']">{{schoolAuthority.role?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/school-authority', schoolAuthority.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-classroom-heading" jhiTranslate="eschoolApp.classroom.home.createOrEditLabel">Create or edit a Classroom</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!classroom.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="classroom.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.classroom.classroomName" for="field_classroomName">Classroom Name</label>
+                    <input type="text" class="form-control" name="classroomName" id="field_classroomName"
+                        [(ngModel)]="classroom.classroomName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.classroom.year" for="field_year">Year</label>
+                    <input type="number" class="form-control" name="year" id="field_year"
+                        [(ngModel)]="classroom.year" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.classroom.tutionFees" for="field_tutionFees">Tution Fees</label>
+                    <input type="number" class="form-control" name="tutionFees" id="field_tutionFees"
+                        [(ngModel)]="classroom.tutionFees" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.classroom.ccCoef" for="field_ccCoef">Cc Coef</label>
+                    <input type="number" class="form-control" name="ccCoef" id="field_ccCoef"
+                        [(ngModel)]="classroom.ccCoef" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="eschoolApp.classroom.cCoef" for="field_cCoef">C Coef</label>
+                    <input type="number" class="form-control" name="cCoef" id="field_cCoef"
+                        [(ngModel)]="classroom.cCoef" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

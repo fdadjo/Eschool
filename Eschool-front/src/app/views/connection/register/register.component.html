@@ -1,0 +1,118 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-light bg-white py-3" id="navbar_main">
+    <div class="container">
+      <a class="navbar-brand mr-lg-5" [routerLink]="['/']"><strong>E</strong>SCHOOL </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar_main_collapse">
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link">{{'SIGN_UP.TEXT_TWO'| translate}}</a>
+          </li>
+          <li class="nav-item mr-0">
+            <!--a href="#" class="nav-link d-lg-none">Login now</a-->
+            <a [routerLink]="['/login']" class="btn btn-sm btn-success btn-circle btn-icon d-none d-lg-inline-flex">
+              <span class="btn-inner--text">{{'SIGN_UP.SIGN_IN'| translate}}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <h1>{{'SIGN_UP.TITLE'| translate}}</h1>
+            <p class="text-muted">{{'SIGN_IN.SIGN_UP'| translate}}</p>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-home"></i></span>
+              </div>
+              <input type="text" id="user_company" name="companyName" class="form-control" placeholder="{{'SIGN_UP.COMPANY'| translate}}" [(ngModel)]="userAccount.schoolName">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-user"></i></span>
+              </div>
+              <input type="text" class="form-control" name="login" id="user_name" placeholder="{{'SIGN_UP.USERNAME'| translate}}" [(ngModel)]="userAccount.login">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-user"></i></span>
+              </div>
+              <input type="text" class="form-control" id="f_name" name="firstName" placeholder="{{'SIGN_UP.FIRST_NAME'| translate}}" [(ngModel)]="userAccount.firstName">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-user"></i></span>
+              </div>
+              <input type="text" id="l_name" name="lastName" class="form-control" placeholder="{{'SIGN_UP.LAST_NAME'| translate}}" [(ngModel)]="userAccount.lastName">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" name="email" id="email" class="form-control" placeholder="{{'SIGN_UP.EMAIL'| translate}}" [(ngModel)]="userAccount.email">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-lock"></i></span>
+              </div>
+              <input type="password" id="user_pass_1" name="password" class="form-control" placeholder="{{'SIGN_UP.PASSWORD'| translate}}" [(ngModel)]="userAccount.password">
+            </div>
+
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-lock"></i></span>
+              </div>
+              <input type="password" id="user_pass_2" name="confirmPassword" class="form-control" placeholder="{{'SIGN_UP.CONFIRM_PASSWORD'| translate}}" [(ngModel)]="confirmPassword" >
+            </div>
+
+            <div class="input-group mb-4">
+              <div class="card card-accent-success">
+                <div class="card-header">
+                  {{'SIGN_UP.INFO'| translate}}
+
+                </div>
+                <div class="card-body">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="true"
+                             style="display: inline-block;">
+                      {{'SIGN_UP.TEXT_ONE'| translate}}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!--/.col-->
+
+            <button type="button" class="btn btn-block btn-success" (click)="onSubmit()">{{'SIGN_UP.SIGN_UP'| translate}}</button>
+          </div>
+          <!--div class="card-footer p-4">
+            <div class="row">
+              <div class="col-6">
+                <button><span>{{'SIGN_UP.TEXT_TWO'| translate}}</span></button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-block btn-twitter" type="button"><span>twitter</span></button>
+              </div>
+            </div>
+          </div-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<div class="container" style="margin-top: 30px">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('absence')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-bell bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-danger mb-0 mt-2">12</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.ABSENCES'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('timesheet')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-calendar bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-warning mb-0 mt-2">3</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.SCHEDULE'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('unit/list')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-cogs bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-primary mb-0 mt-2">9</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.UNITY'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3" routerLink="/classroom/exams">
+      <div class="card" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-book bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-info mb-0 mt-2">6</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.EXAMS'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+
+
+    <div *ngIf="isTeacher" class="col-sm-6 col-lg-3">
+      <div class="card" routerLink="/classroom" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-university bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-danger mb-0 mt-2">36</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.CLASSES'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div *ngIf="isTeacher" class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('teacher/list')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-user bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-warning mb-0 mt-2">55</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.TEACHERS'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" routerLink="/classroom/students" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-group bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-primary mb-0 mt-2">800</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.STUDENTS'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('homework')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-laptop bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-info mb-0 mt-2">7</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.HOMEWORK'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+
+
+    <div *ngIf="isFounder" class="col-sm-6 col-lg-3">
+      <div class="card" (click)="openPage('accounting')" style="cursor:pointer;">
+        <div class="card-body p-3 clearfix">
+          <i class="fa fa-money bg-success p-3 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-danger mb-0 mt-2">691</div>
+          <div class="text-muted text-uppercase font-weight-bold font-xs">{{'HOME.ACCOUNTING'| translate}}</div>
+        </div>
+        <div class="card-footer px-3 py-2">
+          <u class="font-weight-bold font-xs btn-block text-muted">View More <i class="fa fa-angle-right float-right font-lg"></i></u>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div>

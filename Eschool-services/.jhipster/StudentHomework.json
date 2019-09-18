@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "student",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "studentHomework"
+        },
+        {
+            "relationshipName": "homework",
+            "otherEntityName": "homework",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "done",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20190417140401",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "student_homework",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

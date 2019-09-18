@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "minSalary",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "maxSalary",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20190417130730",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "job",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

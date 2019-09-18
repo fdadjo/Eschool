@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.software.zone.pro.eschool",
+            "nativeLanguage": "en"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "ESCHOOL",
+        "packageName": "com.software.zone.pro.eschool",
+        "packageFolder": "com/software/zone/pro/eschool",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "postgresql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": "eureka",
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "M2U4ZGUwZTE2MzNiMTUzYWJlMzEwOGY4MWRkMmU4YmRkZmI5MGNkMWYyZGE0MTI5ZWU3NzQ1N2Q3YjA3MGJlYmEzZDIzMTU5OTk5ZTFiY2FiZmY0NWZiOTIzZTQ4ZWI2MDlhMjFiOGQwNzdkZWEyOTExMGZiZTkwZjNhZjVkNTM=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "en",
+        "languages": ["en"]
+    }
+}

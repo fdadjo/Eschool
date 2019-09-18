@@ -1,0 +1,23 @@
+{
+    "eschoolApp": {
+        "studentHomework": {
+            "home": {
+                "title": "Student Homeworks",
+                "createLabel": "Create a new Student Homework",
+                "createOrEditLabel": "Create or edit a Student Homework"
+            },
+            "created": "A new Student Homework is created with identifier {{ param }}",
+            "updated": "A Student Homework is updated with identifier {{ param }}",
+            "deleted": "A Student Homework is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Student Homework {{ id }}?"
+            },
+            "detail": {
+                "title": "Student Homework"
+            },
+            "done": "Done",
+            "student": "Student",
+            "homework": "Homework"
+        }
+    }
+}

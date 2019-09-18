@@ -1,0 +1,21 @@
+{
+    "eschoolApp": {
+        "timeSlotHistory": {
+            "home": {
+                "title": "Time Slot Histories",
+                "createLabel": "Create a new Time Slot History",
+                "createOrEditLabel": "Create or edit a Time Slot History"
+            },
+            "created": "A new Time Slot History is created with identifier {{ param }}",
+            "updated": "A Time Slot History is updated with identifier {{ param }}",
+            "deleted": "A Time Slot History is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Time Slot History {{ id }}?"
+            },
+            "detail": {
+                "title": "Time Slot History"
+            },
+            "timesheet": "Timesheet"
+        }
+    }
+}

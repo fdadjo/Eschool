@@ -1,0 +1,24 @@
+{
+    "eschoolApp": {
+        "abscence": {
+            "home": {
+                "title": "Abscences",
+                "createLabel": "Create a new Abscence",
+                "createOrEditLabel": "Create or edit a Abscence"
+            },
+            "created": "A new Abscence is created with identifier {{ param }}",
+            "updated": "A Abscence is updated with identifier {{ param }}",
+            "deleted": "A Abscence is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Abscence {{ id }}?"
+            },
+            "detail": {
+                "title": "Abscence"
+            },
+            "date": "Date",
+            "commentaire": "Commentaire",
+            "abscence": "Abscence",
+            "justify": "Justify"
+        }
+    }
+}

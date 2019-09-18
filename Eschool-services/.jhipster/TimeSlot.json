@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "keyName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190417141321",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "time_slot",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

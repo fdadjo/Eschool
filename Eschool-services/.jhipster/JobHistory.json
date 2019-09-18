@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "monthlySalary",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20190417131054",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "job_history",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,68 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="eschoolApp.schoolAuthority.home.title">School Authorities</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-school-authority" [routerLink]="['/school-authority/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="eschoolApp.schoolAuthority.home.createLabel">
+            Create new School Authority
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="schoolAuthorities">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="eschoolApp.schoolAuthority.school">School</span></th>
+            <th><span jhiTranslate="eschoolApp.schoolAuthority.user">User</span></th>
+            <th><span jhiTranslate="eschoolApp.schoolAuthority.role">Role</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let schoolAuthority of schoolAuthorities ;trackBy: trackId">
+                <td><a [routerLink]="['/school-authority', schoolAuthority.id, 'view' ]">{{schoolAuthority.id}}</a></td>
+                <td>
+                    <div *ngIf="schoolAuthority.school">
+                        <a [routerLink]="['../school', schoolAuthority.school?.id, 'view' ]" >{{schoolAuthority.school?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    {{schoolAuthority.user?.login}}
+                </td>
+                <td>
+                    <div *ngIf="schoolAuthority.role">
+                        <a [routerLink]="['../authority', schoolAuthority.role?.id, 'view' ]" >{{schoolAuthority.role?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/school-authority', schoolAuthority.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/school-authority', schoolAuthority.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'school-authority', { outlets: { popup: schoolAuthority.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

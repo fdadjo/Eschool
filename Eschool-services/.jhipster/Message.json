@@ -1,0 +1,32 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "content",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contentType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "MessageType",
+            "fieldValues": "COMMA"
+        }
+    ],
+    "changelogDate": "20190417133027",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "message",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

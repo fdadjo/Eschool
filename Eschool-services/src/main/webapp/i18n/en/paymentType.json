@@ -1,0 +1,8 @@
+{
+    "eschoolApp": {
+        "PaymentType": {
+            "null": "",
+            "COMMA": "COMMA"
+        }
+    }
+}

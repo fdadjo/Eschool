@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="studentHomework">
+            <h2><span jhiTranslate="eschoolApp.studentHomework.detail.title">Student Homework</span> {{studentHomework.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eschoolApp.studentHomework.done">Done</span></dt>
+                <dd>
+                    <span>{{studentHomework.done}}</span>
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.studentHomework.student">Student</span></dt>
+                <dd>
+                    {{studentHomework.student?.login}}
+                </dd>
+                <dt><span jhiTranslate="eschoolApp.studentHomework.homework">Homework</span></dt>
+                <dd>
+                    <div *ngIf="studentHomework.homework">
+                        <a [routerLink]="['/homework', studentHomework.homework?.id, 'view']">{{studentHomework.homework?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/student-homework', studentHomework.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

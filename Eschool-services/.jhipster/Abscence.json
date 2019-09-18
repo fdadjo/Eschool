@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "commentaire",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "abscence",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "justify",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20190417120329",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "abscence",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

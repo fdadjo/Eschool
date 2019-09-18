@@ -1,0 +1,52 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-light bg-white py-3" id="navbar_main">
+    <div class="container">
+      <a class="navbar-brand mr-lg-5" [routerLink]="['/']"><strong>E</strong>SCHOOL </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar_main_collapse">
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link">{{'SIGN_UP.TEXT_TWO'| translate}}</a>
+          </li>
+          <li class="nav-item mr-0">
+            <!--a href="#" class="nav-link d-lg-none">Login now</a-->
+            <a [routerLink]="['/login']" class="btn btn-sm btn-success btn-circle btn-icon d-none d-lg-inline-flex">
+              <span class="btn-inner--text">{{'SIGN_UP.SIGN_IN'| translate}}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="clearfix">
+          <h1 class="float-left display-3 mr-4">ESCHOOL</h1>
+          <h4 class="pt-3"><strong> Congratulations</strong>, your account has been created!</h4>
+          <p class="text-muted">Please click on the activation button to access it. Thank You.</p>
+        </div>
+        <div class="input-prepend input-group">
+          <!--div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+          </div-->
+          <!--input id="prependedInput" class="form-control" size="16" type="text" placeholder="What are you looking for?">
+          <span class="input-group-append">
+            <button class="btn btn-info" type="button">Search</button>
+          </span-->
+          <div class="form-row">
+            <button class="btn btn-block btn-lg btn-success" (click)="onSubmit()">Activation!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

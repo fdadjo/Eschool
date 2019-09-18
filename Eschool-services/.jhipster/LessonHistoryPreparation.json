@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "lessonHistory",
+            "otherEntityName": "lessonHistory",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [],
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20190417132422",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "lesson_history_preparation",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,79 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "schoolName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "streetAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "postalCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stateProvince",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "devise",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ccCoef",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "cCoef",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "logoLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryMotto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countrySecretary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countrySubSecretary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "schoolMotto",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190417135235",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "school",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

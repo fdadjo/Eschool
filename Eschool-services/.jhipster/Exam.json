@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "coef",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "session",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "examinationFile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "plannedOn",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20190417125613",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "exam",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity LessonHistoryPreparation.
+    -->
+    <changeSet id="20190417132422-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="lesson_history_id"
+                                 baseTableName="lesson_history_preparation"
+                                 constraintName="fk_lesson_history_preparation_lesson_history_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="lesson_history"/>
+
+    </changeSet>
+</databaseChangeLog>

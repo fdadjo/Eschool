@@ -1,0 +1,22 @@
+{
+    "eschoolApp": {
+        "classroomHistory": {
+            "home": {
+                "title": "Classroom Histories",
+                "createLabel": "Create a new Classroom History",
+                "createOrEditLabel": "Create or edit a Classroom History"
+            },
+            "created": "A new Classroom History is created with identifier {{ param }}",
+            "updated": "A Classroom History is updated with identifier {{ param }}",
+            "deleted": "A Classroom History is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Classroom History {{ id }}?"
+            },
+            "detail": {
+                "title": "Classroom History"
+            },
+            "fees": "Fees",
+            "classroom": "Classroom"
+        }
+    }
+}

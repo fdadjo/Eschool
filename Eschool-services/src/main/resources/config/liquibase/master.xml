@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417103916_added_entity_Category.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417120329_added_entity_Abscence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417124243_added_entity_Classroom.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417125107_added_entity_ClassroomHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417125613_added_entity_Exam.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417130021_added_entity_ExamResult.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417130400_added_entity_Homework.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417130730_added_entity_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417131054_added_entity_JobHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417131530_added_entity_Lesson.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417131926_added_entity_LessonHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417132422_added_entity_LessonHistoryPreparation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417133027_added_entity_Message.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417133850_added_entity_Payment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417135235_added_entity_School.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417135848_added_entity_SchoolAuthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417140401_added_entity_StudentHomework.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417140754_added_entity_TimeSheet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417141321_added_entity_TimeSlot.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417142427_added_entity_TimeSlotHistory.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190417125107_added_entity_constraints_ClassroomHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417132422_added_entity_constraints_LessonHistoryPreparation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417133850_added_entity_constraints_Payment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417135848_added_entity_constraints_SchoolAuthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417140401_added_entity_constraints_StudentHomework.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417140754_added_entity_constraints_TimeSheet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190417142427_added_entity_constraints_TimeSlotHistory.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>
